@@ -3,30 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Module 1: Self-Mastery & Instrument Calibration</title>
+    <title>Module 1: Self-Mastery & Instrument Calibration (Deep Integration)</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@300;400;600;700&display=swap');
 
         body {
             font-family: 'Saira Condensed', sans-serif;
-            /* Applied gradient background directly to body to avoid 'container box' */
             background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 100%);
             color: #d3d3d3;
             min-height: 100vh;
             background-attachment: fixed;
-            padding: 1.5rem; /* p-6 equivalent */
-        }
-
-        /* Wrapper to constrain width */
-        .content-wrapper {
-            max-width: 48rem; /* max-w-4xl equivalent */
-            margin-left: auto;
-            margin-right: auto;
-            /* Optional: Add some subtle bg/border if needed without being an 'ugly box' */
-            /* background: rgba(15, 15, 25, 0.3); */
-            /* border: 1px solid rgba(255, 0, 68, 0.1); */
-            padding: 1.5rem; /* Added padding here */
+            padding: 1.5rem; /* p-6 equivalent for body padding */
         }
 
         .title-gradient {
@@ -44,7 +32,6 @@
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
             backdrop-filter: blur(3px);
             transition: all 0.3s ease-in-out;
-            /* Removed hover transform/shadow */
             margin-bottom: 2rem; /* mb-8 */
             padding: 1.25rem; /* p-5 */
             border-radius: 0.375rem; /* rounded-md */
@@ -57,20 +44,35 @@
             background-clip: text;
         }
 
+        /* Primary emphasis for core nihilistic/strategic points */
         .emphasis {
             background: linear-gradient(90deg, #ff416c 0%, #ff4b2b 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
-            font-weight: bold;
+            font-weight: bold; /* Keep bold for emphasis class */
         }
 
-        .exercise-prompt {
+        /* Secondary emphasis for keywords or standard highlighting */
+        .highlight {
+           color: #e2e8f0; /* Slightly lighter gray */
+           font-weight: 600; /* semibold */
+        }
+
+        .exercise-heading {
             background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
             font-weight: 600; /* semibold */
+            margin-top: 1rem;
+            display: block;
+        }
+
+        .instruction {
+           font-style: italic;
+           color: #a0aec0; /* gray-500 */
+           margin-bottom: 0.5rem;
         }
 
         li {
@@ -90,123 +92,183 @@
         }
 
         /* Custom scrollbar */
-        ::-webkit-scrollbar {
-            width: 8px;
-            height: 8px;
-        }
-
-        ::-webkit-scrollbar-track {
-            background: rgba(20, 20, 30, 0.7);
-        }
-
-        ::-webkit-scrollbar-thumb {
-            background: linear-gradient(180deg, #ff0044 0%, #880022 100%);
-            border-radius: 4px;
-        }
-
-        ::-webkit-scrollbar-thumb:hover {
-            background: linear-gradient(180deg, #ff3368 0%, #aa0033 100%);
-        }
+        ::-webkit-scrollbar { width: 8px; height: 8px; }
+        ::-webkit-scrollbar-track { background: rgba(20, 20, 30, 0.7); }
+        ::-webkit-scrollbar-thumb { background: linear-gradient(180deg, #ff0044 0%, #880022 100%); border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: linear-gradient(180deg, #ff3368 0%, #aa0033 100%); }
     </style>
 </head>
-<body> <!-- Removed padding here, applied to wrapper -->
+<body>
 
-    <div class="max-w-4xl mx-auto">
+    <div class="max-w-4xl mx-auto p-6">
 
         <h1 class="text-3xl md:text-4xl font-bold mb-8 text-center title-gradient border-b border-red-900 pb-4">
-            Module 1: Self-Mastery & Instrument Calibration
+            Module 1: Self-Mastery & Instrument Calibration (Deep Integration Protocol)
         </h1>
-        <p class="mb-8 text-lg italic text-gray-300">
-            The external world responds to the signals you project. Before manipulating those responses, you must gain absolute control over the transmitter: You. Your posture, your voice, your gaze, your emotional state – these are not reflections of some innate 'self', they are controllable variables. This module focuses on calibrating these instruments for maximum signal clarity and impact. Master your internal state and external presentation; turn yourself from a reactive organism into a calibrated tool of intent.
+        <p class="mb-8 text-lg italic text-gray-300 instruction">
+            Instruction: Your internal state and external projection are controllable variables, not fixed traits. This module provides the schematics for calibrating your primary instrument: yourself. Engage actively with the protocols; mastery requires deliberate engineering of presence, emotional control, focus, and narrative. Passive familiarity is insufficient.
         </p>
 
         <!-- Section 1: Physiology of Presence -->
         <div class="section-container">
-            <h2 class="text-2xl font-semibold mb-4 section-title">1. Physiology of Presence: Signal Control</h2>
-            <p class="mb-3"><span class="emphasis">Core Principle:</span> Your physical presence communicates status, confidence, and intent far more effectively than words alone. Conscious control over body language and vocalics allows you to project desired attributes regardless of internal fluctuations.</p>
-            <p class="mb-3"><span class="font-semibold text-gray-200">Deconstruction:</span> Humans are wired to assess status and intent visually and auditorily. Open, expansive postures (taking up space) signal dominance and comfort. Direct, steady eye contact indicates confidence and engagement (or challenge). A resonant, measured vocal tone conveys authority, while rapid, high-pitched speech signals anxiety. These are physiological signals others read subconsciously. Your task is to *broadcast* the signals consistent with power and control, making them habitual.</p>
-            <p class="mb-4"><span class="font-semibold text-gray-200">Implications & Application:</span></p>
-            <ul class="list-disc list-inside ml-4 mb-4 text-gray-300">
-                <li>Practice maintaining upright posture, shoulders back, occupying space comfortably. Avoid shrinking or closing off.</li>
-                <li>Master steady eye contact. Look directly at people when speaking or listening. Don't be the first to break gaze in neutral situations.</li>
-                <li>Control your vocal delivery: Speak clearly, at a measured pace, from the diaphragm for resonance. Eliminate filler words ("um," "uh"). Vary tone strategically, don't be monotone.</li>
-                <li>Minimize fidgeting or anxious movements. Cultivate stillness; unnecessary movement leaks uncertainty.</li>
-                <li><span class="emphasis">Key Insight:</span> Projecting confidence physically can create a feedback loop, influencing your internal state. Act the part to become the part.</li>
-            </ul>
-            <p class="exercise-prompt mt-4">Exercises:</p>
-            <ul class="list-disc list-inside ml-4 text-sm text-gray-400">
-                <li>Record yourself speaking (audio or video). Analyze your posture, eye contact (if video), vocal tone, pace, and filler words. Identify 3 specific areas for improvement.</li>
-                <li>Practice 'power posing' (e.g., expansive stances) privately for 2 minutes before anticipated stressful interactions to manage state. Observe effects objectively.</li>
-                <li>Consciously practice holding eye contact slightly longer than comfortable in low-stakes interactions (cashier, acquaintance).</li>
-                <li>In your next conversation, focus solely on eliminating filler words and speaking at a deliberate pace.</li>
+            <h2 class="text-2xl font-semibold mb-4 section-title">1. Physiology of Presence: Engineering Signal Dominance</h2>
+            <p class="mb-3"><span class="emphasis">Core Principle Refined:</span> Your non-verbal signals (posture, gaze, voice) are potent, evolutionarily-tuned communicators of status, confidence, and intent. Conscious control allows you to <span class="emphasis">broadcast desired signals</span>, overriding baseline states and influencing others' subconscious perception of your position within the social hierarchy.</p>
+            <p class="mb-3"><span class="highlight">Deeper Deconstruction:</span> Humans rapidly assess status via physical cues. <span class="highlight">Expansive postures</span> (taking up space, open limbs) mimic dominance displays seen across species, signaling comfort and control. <span class="highlight">Direct, sustained gaze</span> indicates engagement, confidence, or challenge (context matters). <span class="highlight">Vocal resonance and measured pace</span> (lower pitch, slower tempo) correlate with perceived authority and calmness, while shallow, rapid speech signals anxiety/subordination. These aren't just habits; they are physiological broadcasts read by ancient neural circuits. Mastering these allows you to <span class="emphasis">project control even under pressure</span>.</p>
+            <p class="mb-4"><span class="highlight">Nuanced Application Focus:</span>
+                 <ul class="list-disc list-inside ml-4 text-gray-300">
+                    <li><span class="highlight">Calibrated Expansion:</span> Aim for relaxed, comfortable occupation of space, not aggressive posturing which can trigger defensiveness. Context is key.</li>
+                    <li><span class="highlight">Purposeful Gaze:</span> Use steady eye contact during key moments (making points, listening intently). Avoidance signals weakness; excessive staring signals threat. Calibrate.</li>
+                    <li><span class="highlight">Vocal Command:</span> Practice speaking from the diaphragm for resonance. Consciously slow your pace, especially when feeling rushed. Eliminate uptalk and filler words which undermine authority. Record and analyze your voice.</li>
+                    <li><span class="highlight">Stillness as Strength:</span> Minimize restless movements (fidgeting, shifting weight). Purposeful, deliberate motion conveys control; constant motion leaks uncertainty.</li>
+                    <li><span class="emphasis">Embodied Cognition Feedback Loop:</span> Deliberately adopting confident physiology can influence your internal state (e.g., feeling more confident after power posing). Use this feedback loop consciously.</li>
+                 </ul>
+            </p>
+
+            <span class="exercise-heading">Active Integration Protocol v2:</span>
+            <ul class="list-disc list-inside ml-4 mt-2 text-sm text-gray-400">
+                <li><span class="instruction">Active Recall:</span> Explain the evolutionary basis for why expansive posture signals dominance. Describe 3 specific characteristics of an authoritative vocal delivery. What is the 'Embodied Cognition Feedback Loop'?</li>
+                <li><span class="instruction">Practice Testing:</span>
+                    <ul class="list-decimal list-inside ml-6">
+                        <li>Contrast 'calibrated expansion' with 'aggressive posturing'.</li>
+                        <li>In what situations might direct eye contact be interpreted negatively? How do you adjust?</li>
+                        <li>Why is eliminating filler words important for projecting presence?</li>
+                        <li>Describe an exercise to improve vocal resonance.</li>
+                    </ul>
+                </li>
+                <li><span class="instruction">Error Analysis:</span> Concepts unclear? Difficulty linking physiology to perceived status? Actively visualize the signals in social interactions you observe. Rephrase the principles in terms of signal -> subconscious interpretation -> perceived status. Re-test.</li>
+                <li><span class="instruction">Presence Experiment:</span>
+                    <ul class="list-disc list-inside ml-6">
+                        <li>Goal: Consciously apply one specific presence technique (e.g., slower speech pace, deliberate stillness, sustained eye contact) in your next significant conversation.</li>
+                        <li>Hypothesis: Applying technique X will result in [predicted effect on self-perception OR perceived reaction from other].</li>
+                        <li>Act: Implement the technique.</li>
+                        <li>Observe: Note internal state changes and the other person's subtle reactions (engagement, deference, etc.).</li>
+                        <li>Analyze: Did the outcome match the hypothesis? What data did this provide about the technique's effect in this context? Adjust approach for next time.</li>
+                    </ul>
+                </li>
+                <li><span class="instruction">Spaced Repetition:</span> Add specific techniques (posture, gaze, vocalics, stillness) and their underlying signaling mechanisms to SRS. Include prompts requiring calibration based on context.</li>
             </ul>
         </div>
 
         <!-- Section 2: Emotional Regulation -->
         <div class="section-container">
-            <h2 class="text-2xl font-semibold mb-4 section-title">2. Emotional Regulation: Silencing Internal Noise</h2>
-            <p class="mb-3"><span class="emphasis">Core Principle:</span> Emotions are biochemical data signals, not directives. Uncontrolled emotional reactions sabotage strategic action. Mastery requires observing, understanding, and managing these signals to maintain operational effectiveness under pressure.</p>
-            <p class="mb-3"><span class="font-semibold text-gray-200">Deconstruction:</span> Fear, anger, excitement – these states flood the system with chemicals that bias perception and decision-making, often leading to suboptimal, reactive behavior. Techniques like Cognitive Behavioral Therapy (CBT) demonstrate that thoughts precede and shape emotional responses. Stoic philosophy emphasizes differentiating between external events (neutral) and internal judgments (the source of disturbance). Mindfulness practices train observational detachment from thoughts and feelings. The goal isn't suppression, but <span class="emphasis">non-interference</span>: emotions are noted, but do not dictate action unless strategically chosen.</p>
-            <p class="mb-4"><span class="font-semibold text-gray-200">Implications & Application:</span></p>
-            <ul class="list-disc list-inside ml-4 mb-4 text-gray-300">
-                <li>Cultivate detachment: Observe your emotions as transient internal weather patterns, not fundamental truths about reality or yourself.</li>
-                <li>Identify triggers: Recognize situations or thoughts that reliably provoke counter-productive emotional responses.</li>
-                <li>Employ cognitive reframing: Consciously challenge and change the thoughts fueling negative emotions (e.g., "This setback is a disaster" vs. "This is unexpected data requiring a new approach").</li>
-                <li>Use physiological controls: Slow, deep breathing demonstrably calms the nervous system during stress.</li>
-                <li>Maintain composure externally even when experiencing internal turbulence. This preserves your strategic options and projects control.</li>
-            </ul>
-            <p class="exercise-prompt mt-4">Exercises:</p>
-            <ul class="list-disc list-inside ml-4 text-sm text-gray-400">
-                <li>Keep an "emotion log": Note strong emotional responses, the trigger, the accompanying thoughts, and the behavioral impulse. Analyze the pattern.</li>
-                <li>Practice mindfulness/detachment for 5-10 minutes daily: Focus on breath or bodily sensations, observe thoughts/feelings arise and pass without judgment.</li>
-                <li>Next time you feel irritation or anxiety rising, consciously take 5 slow, deep breaths before reacting. Note the effect.</li>
-                <li>Reframe a recent negative event. Write down the initial interpretation and then construct a more neutral, data-focused interpretation.</li>
+            <h2 class="text-2xl font-semibold mb-4 section-title">2. Emotional Regulation: Mastering Internal State Control</h2>
+            <p class="mb-3"><span class="emphasis">Core Principle Refined:</span> Emotions are neurochemical signals providing data about your internal/external environment, but they are <span class="emphasis">not commands</span>. Effective operation requires decoupling the signal (feeling) from automatic, often suboptimal, behavioral responses by engaging higher cognitive functions (<span class="highlight">prefrontal cortex</span>) to override reactive impulses (<span class="highlight">amygdala hijack</span>).</p>
+            <p class="mb-3"><span class="highlight">Deeper Deconstruction:</span> Intense emotions (fear, anger) can trigger the amygdala, short-circuiting rational thought and leading to reactive behavior that undermines strategic goals. Emotional regulation involves: 1) <span class="highlight">Awareness:</span> Recognizing the onset of an emotion and its physiological signals. 2) <span class="highlight">Analysis:</span> Understanding the trigger and evaluating the emotion's validity/utility in the context. 3) <span class="highlight">Modulation:</span> Employing cognitive techniques (<span class="highlight">cognitive reappraisal</span> - changing interpretation of the trigger) and physiological techniques (e.g., controlled breathing) to manage the intensity and duration. This is distinct from <span class="highlight">suppression</span> (bottling up), which is often ineffective long-term. Pragmatic <span class="highlight">Emotional Intelligence</span> involves both reading others' states and <span class="emphasis">managing your own displayed emotions strategically</span>.</p>
+            <p class="mb-4"><span class="highlight">Nuanced Application Focus:</span>
+                 <ul class="list-disc list-inside ml-4 text-gray-300">
+                    <li><span class="highlight">Decouple Feeling from Action:</span> Practice inserting a pause between feeling an emotion and acting. Use the pause for awareness and analysis.</li>
+                    <li><span class="highlight">Cognitive Reappraisal Practice:</span> When feeling a negative emotion, actively generate alternative interpretations of the triggering event that are less emotionally charged or more empowering.</li>
+                    <li><span class="highlight">Physiological Reset:</span> Master techniques like diaphragmatic breathing (slow exhale) to physically calm the nervous system during acute stress or emotional spikes.</li>
+                    <li><span class="highlight">Strategic Display vs. Authentic Feeling:</span> Differentiate between genuinely feeling an emotion and *choosing* to display a certain emotion for strategic effect (e.g., displaying calm under pressure, showing calculated anger).</li>
+                    <li><span class="emphasis">Identify Personal Triggers:</span> Recognize recurring situations or types of interactions that reliably provoke counter-productive emotional responses in you. Prepare strategies specifically for these triggers.</li>
+                 </ul>
+            </p>
+
+            <span class="exercise-heading">Active Integration Protocol v2:</span>
+            <ul class="list-disc list-inside ml-4 mt-2 text-sm text-gray-400">
+                <li><span class="instruction">Active Recall:</span> Explain the difference between emotional regulation and suppression. What is cognitive reappraisal? Name one physiological technique for calming the nervous system.</li>
+                <li><span class="instruction">Practice Testing:</span>
+                    <ul class="list-decimal list-inside ml-6">
+                        <li>Describe the process of 'decoupling feeling from action'.</li>
+                        <li>Give an example of reappraising a situation that initially caused frustration.</li>
+                        <li>Why is identifying personal triggers important for regulation?</li>
+                        <li>Contrast 'authentic feeling' with 'strategic display' of emotion.</li>
+                    </ul>
+                </li>
+                <li><span class="instruction">Error Analysis:</span> Confusing regulation with suppression? Unclear on reappraisal? Actively practice generating reappraisals for hypothetical frustrating scenarios. Link the techniques back to the goal of maintaining operational effectiveness. Re-test.</li>
+                <li><span class="instruction">Trigger Identification & Strategy Exercise:</span>
+                    <ul class="list-disc list-inside ml-6">
+                        <li>Act: Identify one specific, recurring situation that reliably triggers a negative or counter-productive emotion in you.</li>
+                        <li>Analyze: What is the trigger? What thoughts usually accompany the emotion? What is the typical behavioral result?</li>
+                        <li>Strategize: Develop a specific plan for the next time this trigger occurs. Include: 1) An awareness cue (how you'll notice it early). 2) A specific regulation technique (e.g., breathing pattern, reappraisal phrase). 3) A pre-planned, constructive behavioral response. Write it down.</li>
+                    </ul>
+                </li>
+                <li><span class="instruction">Spaced Repetition:</span> Add regulation techniques (reappraisal, breathing, decoupling), trigger analysis, and the concept of strategic display to SRS.</li>
             </ul>
         </div>
 
         <!-- Section 3: Focus & Observation -->
         <div class="section-container">
-            <h2 class="text-2xl font-semibold mb-4 section-title">3. Focus & Observation: Tuning the Sensors</h2>
-            <p class="mb-3"><span class="emphasis">Core Principle:</span> Effective operation requires accurate real-time data. Internal noise (fear, calculation, ego) blinds you. Train your focus outward to perceive the actual dynamics and cues of the environment and other actors.</p>
-            <p class="mb-3"><span class="font-semibold text-gray-200">Deconstruction:</span> Untrained attention flits constantly or fixates internally on anxieties and plans. This means you miss crucial non-verbal cues, shifts in mood, or openings for influence. True presence isn't mystical; it's directed attention. By focusing externally, you gather the data needed for accurate assessment and calibrated action. You shift from reacting to your internal state to responding intelligently to the external reality.</p>
-            <p class="mb-4"><span class="font-semibold text-gray-200">Implications & Application:</span></p>
-            <ul class="list-disc list-inside ml-4 mb-4 text-gray-300">
-                <li>Practice active listening: Focus entirely on understanding the other person's words, tone, and body language, momentarily silencing your internal monologue about what to say next.</li>
-                <li>Develop 'situational awareness': Consciously scan social environments, noting group formations, who is talking to whom, general energy levels, potential points of interest or friction.</li>
-                <li>Observe micro-expressions and non-verbal leakage: Fleeting facial expressions or body language inconsistencies can betray underlying feelings or intentions. (Caution: Avoid over-interpretation).</li>
-                <li>When feeling overwhelmed or anxious in a social setting, deliberately shift focus to observing objective details of the environment (colors, sounds, objects) to ground yourself externally.</li>
-            </ul>
-            <p class="exercise-prompt mt-4">Exercises:</p>
-            <ul class="list-disc list-inside ml-4 text-sm text-gray-400">
-                <li>In your next 3 conversations, set the sole goal of being able to accurately summarize the other person's main points *and* describe their apparent emotional state afterwards.</li>
-                <li>Spend 10 minutes in a public place (cafe, park) solely observing interactions without judgment. Note patterns of body language, proximity, and vocal dynamics.</li>
-                <li>Practice the 'external grounding' technique next time you feel internal noise escalating. Describe 5 things you see, 4 things you hear, 3 things you feel physically.</li>
+            <h2 class="text-2xl font-semibold mb-4 section-title">3. Focus & Observation: Optimizing Data Input</h2>
+            <p class="mb-3"><span class="emphasis">Core Principle Refined:</span> Your attention is a finite resource. Effective operation demands directing this resource <span class="emphasis">outward</span> to gather high-fidelity data from the environment and other actors, rather than squandering it on internal noise (anxiety, ego-defense, planning your next sentence). Sharp observation is the basis of accurate assessment and calibrated action.</p>
+            <p class="mb-3"><span class="highlight">Deeper Deconstruction:</span> Internal preoccupation (<span class="highlight">task-irrelevant thought</span>) severely limits your capacity to process external cues. This can lead to missing critical non-verbal signals, misinterpreting intent, or failing to notice shifts in group dynamics (<span class="highlight">inattentional blindness</span>). <span class="highlight">Active listening</span> goes beyond hearing words; it involves processing tone, body language, and underlying meaning/intent. <span class="highlight">Situational awareness</span> involves maintaining a broad, ambient scan of the social environment (who is interacting, general mood, potential opportunities/threats) while being able to zoom focus onto specific interactions. This requires disciplined attentional control.</p>
+            <p class="mb-4"><span class="highlight">Nuanced Application Focus:</span>
+                <ul class="list-disc list-inside ml-4 text-gray-300">
+                    <li><span class="highlight">Silence the Inner Monologue (Temporarily):</span> During crucial listening phases, consciously quiet your internal planning/rebuttal voice. Focus solely on receiving information.</li>
+                    <li><span class="highlight">Multi-Channel Observation:</span> Train yourself to simultaneously track verbal content, vocal tone, facial expressions, posture, and gestures. Look for congruence and incongruence.</li>
+                    <li><span class="highlight">Listen for Intent, Not Just Content:</span> Ask yourself: "What is the underlying goal or need behind what this person is saying?"</li>
+                    <li><span class="highlight">Broad Scan, Focused Dive:</span> Practice shifting between general situational awareness in groups and intense focus on a specific individual or dyad when necessary.</li>
+                    <li><span class="emphasis">Objective Observation Reporting:</span> Practice describing observed behaviors neutrally ("He furrowed his brow and crossed his arms") rather than interpreting immediately ("He was angry/defensive"). Interpretation comes after data collection.</li>
+                </ul>
+             </p>
+
+            <span class="exercise-heading">Active Integration Protocol v2:</span>
+            <ul class="list-disc list-inside ml-4 mt-2 text-sm text-gray-400">
+                <li><span class="instruction">Active Recall:</span> Why is internal preoccupation detrimental to effective observation? Define active listening beyond just hearing words. What is the difference between broad situational awareness and focused observation?</li>
+                <li><span class="instruction">Practice Testing:</span>
+                    <ul class="list-decimal list-inside ml-6">
+                        <li>Describe a technique to temporarily silence your inner monologue while listening.</li>
+                        <li>What does 'incongruence' between verbal and non-verbal signals suggest?</li>
+                        <li>Why is practicing neutral behavioral description important before interpretation?</li>
+                        <li>How can you 'listen for intent'? What kind of cues might reveal it?</li>
+                    </ul>
+                </li>
+                <li><span class="instruction">Error Analysis:</span> Difficulty separating observation from interpretation? Struggling to maintain focus? Identify the specific bottleneck. Practice neutral observation exercises repeatedly. Analyze why your attention wanders. Re-test.</li>
+                <li><span class="instruction">Multi-Channel Observation Exercise:</span>
+                    <ul class="list-disc list-inside ml-6">
+                        <li>Act: Watch a short video clip of an unscripted conversation or interview (e.g., on YouTube). Turn off the sound initially.</li>
+                        <li>Observe (Visual Only): Note posture, gestures, facial expressions, interaction dynamics purely based on visual cues. Formulate a hypothesis about the relationship and emotional states.</li>
+                        <li>Observe (Audio Only): Listen without watching. Note vocal tone, pace, interruptions. Refine your hypothesis.</li>
+                        <li>Observe (Full): Watch with sound. Note verbal content.</li>
+                        <li>Analyze: How did each channel add to or change your understanding? Were there incongruencies? How accurate was your initial hypothesis? What specific cues were most revealing?</li>
+                    </ul>
+                </li>
+                 <li><span class="instruction">Spaced Repetition:</span> Add concepts like attentional resources, active listening components, intent vs. content, and neutral observation to SRS.</li>
             </ul>
         </div>
 
         <!-- Section 4: Self-Narrative Control -->
         <div class="section-container">
-            <h2 class="text-2xl font-semibold mb-4 section-title">4. Self-Narrative Control: Programming the Internal Monologue</h2>
-            <p class="mb-3"><span class="emphasis">Core Principle:</span> The story you tell yourself about who you are, what you're capable of, and how the world works dictates your resilience and actions. Seize control of this internal narrative and shape it to serve your objectives.</p>
-            <p class="mb-3"><span class="font-semibold text-gray-200">Deconstruction:</span> Humans constantly construct narratives to make sense of experience. These narratives can be empowering ("I learn from setbacks," "I am capable of handling challenges") or limiting ("I'm always awkward," "People won't like me," "It's hopeless"). These stories directly impact motivation, risk-taking, and interpretation of events. Cognitive biases reinforce existing narratives. Consciously choosing and reinforcing a narrative aligned with strength, agency, and growth is a form of self-programming.</p>
-            <p class="mb-4"><span class="font-semibold text-gray-200">Implications & Application:</span></p>
-            <ul class="list-disc list-inside ml-4 mb-4 text-gray-300">
-                <li>Identify your current default narratives, especially limiting ones related to social interaction, capability, or control.</li>
-                <li>Consciously construct empowering counter-narratives based on evidence (past successes, however small) or desired future states framed as achievable processes.</li>
-                <li>Reframe challenges and failures explicitly as learning opportunities or necessary steps within your chosen narrative ("This proves the need for adjustment," not "This proves I'm incompetent").</li>
-                <li>Use affirmations or written statements (if helpful) not as magic, but as tools to consistently reinforce the desired internal programming.</li>
-                <li>Actively reject victim narratives or external blame; reinforce the narrative of agency and self-responsibility (Module 0).</li>
-            </ul>
-            <p class="exercise-prompt mt-4">Exercises:</p>
-            <ul class="list-disc list-inside ml-4 text-sm text-gray-400">
-                <li>Write down one limiting belief you hold about yourself socially. Challenge it with counter-evidence or reframe it into a statement about learning or strategy.</li>
-                <li>Define the core narrative you *want* to operate from regarding your social effectiveness (e.g., "I am observant, adaptable, and continually improving my ability to navigate social systems"). Write it down.</li>
-                <li>Catch yourself using victim language ("I can't because...") and immediately rephrase it into problem-solving language ("The obstacle is X, potential solutions are Y and Z...").</li>
+            <h2 class="text-2xl font-semibold mb-4 section-title">4. Self-Narrative Control: Programming Operational Identity</h2>
+            <p class="mb-3"><span class="emphasis">Core Principle Refined:</span> The internal story you construct about yourself, your capabilities, and the world directly shapes your perceptions, emotional responses, and behavioral choices. Consciously architecting and reinforcing an <span class="emphasis">empowering yet realistic operational narrative</span> is crucial for resilience, motivation, and aligning actions with goals (<span class="highlight">Self-Efficacy</span>).</p>
+            <p class="mb-3"><span class="highlight">Deeper Deconstruction:</span> Humans strive for cognitive consistency (<span class="highlight">Cognitive Dissonance Theory</span>). Your self-narrative acts as a filter, influencing what information you attend to and how you interpret events (often via <span class="highlight">Confirmation Bias</span>). A limiting narrative ("I'm not good socially") leads to avoiding challenges and interpreting ambiguous feedback negatively, reinforcing the narrative (self-fulfilling prophecy). An empowering narrative ("I am capable of learning social dynamics through analysis and practice") encourages action, frames setbacks as learning opportunities (Module 0 - Failure as Data), and seeks confirming evidence of progress. The narrative must be actively <span class="emphasis">programmed and reinforced</span> through conscious thought and aligned action.</p>
+            <p class="mb-4"><span class="highlight">Nuanced Application Focus:</span>
+                 <ul class="list-disc list-inside ml-4 text-gray-300">
+                    <li><span class="highlight">Identify & Deconstruct Limiting Narratives:</span> Become aware of recurring negative self-talk or beliefs about your capabilities. Challenge their factual basis and utility.</li>
+                    <li><span class="highlight">Construct Your Operational Narrative:</span> Define the identity you *need* to embody to achieve your goals (e.g., "Analytical learner," "Calm strategist," "Resilient operator"). Frame it actively and focus on process/capability, not just fixed traits.</li>
+                    <li><span class="highlight">Gather Supporting Evidence:</span> Actively look for and mentally rehearse past instances (however small) that support your desired operational narrative. Create new evidence through planned actions.</li>
+                    <li><span class="highlight">Action-Narrative Alignment:</span> Ensure your actions are consistent with your chosen narrative. Inconsistency creates dissonance and weakens the narrative. Act *as if* the narrative is true.</li>
+                    <li><span class="emphasis">Future-Pacing & Implementation Intentions:</span> Mentally rehearse successfully navigating future challenges using your operational narrative. Create specific "If-Then" plans ("If I feel hesitant, then I will recall my narrative of being a 'resilient operator' and take the first small step.").</li>
+                 </ul>
+            </p>
+
+            <span class="exercise-heading">Active Integration Protocol v2:</span>
+            <ul class="list-disc list-inside ml-4 mt-2 text-sm text-gray-400">
+                <li><span class="instruction">Active Recall:</span> Explain how self-narratives can create self-fulfilling prophecies. Define Self-Efficacy. What is the role of Cognitive Dissonance in narrative control?</li>
+                <li><span class="instruction">Practice Testing:</span>
+                    <ul class="list-decimal list-inside ml-6">
+                        <li>Describe the steps involved in deconstructing a limiting narrative.</li>
+                        <li>Why is focusing on process/capability often better than focusing on fixed traits when constructing a narrative?</li>
+                        <li>Give an example of an 'Implementation Intention' related to social confidence.</li>
+                        <li>How does aligning actions with narrative strengthen the narrative?</li>
+                    </ul>
+                </li>
+                <li><span class="instruction">Error Analysis:</span> Narrative concept too abstract? Difficulty identifying own narratives? Actively journal your self-talk in specific situations. Analyze the recurring themes. Connect them explicitly to dissonance and self-efficacy concepts. Re-test.</li>
+                <li><span class="instruction">Narrative Reinforcement Exercise:</span>
+                    <ul class="list-disc list-inside ml-6">
+                        <li>Act: Define your desired 'Operational Narrative' for social effectiveness in one clear sentence (e.g., "I am an observant and adaptable strategist who learns rapidly from social data.").</li>
+                        <li>Analyze: Identify one limiting belief that contradicts this narrative.</li>
+                        <li>Strategize: Find/Recall 3 specific pieces of past evidence (actions, learnings) that *support* your desired narrative, even if small. Write them down.</li>
+                        <li>Plan: Define one small action this week that aligns with and further reinforces your desired narrative. Commit to it.</li>
+                    </ul>
+                </li>
+                 <li><span class="instruction">Spaced Repetition:</span> Add narrative construction steps, self-efficacy, implementation intentions, and cognitive dissonance links to SRS. Practice identifying limiting narratives and generating empowering alternatives.</li>
             </ul>
         </div>
 
+
         <p class="mt-10 pt-6 border-t border-gray-700 text-center text-lg italic footer-text">
-            These are not passive exercises. They require consistent, conscious effort. Calibrating yourself is the prerequisite for effectively manipulating the external world. Master these internal controls – your presence, your state, your focus, your narrative – and you build the unshakeable foundation for exerting influence. Neglect this, and you remain a slave to circumstance and internal chaos.
+            Mastering these internal calibration tools is non-negotiable. Consistent, disciplined application of these protocols transforms reflexive reactions into controlled responses, and ambient presence into engineered impact. This self-mastery is the engine driving all effective external operation. Integrate relentlessly.
         </p>
 
     </div>
